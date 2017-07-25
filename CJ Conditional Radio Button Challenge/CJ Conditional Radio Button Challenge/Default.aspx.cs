@@ -16,16 +16,41 @@ namespace CJ_Conditional_Radio_Button_Challenge
 
         protected void okButton_Click(object sender, EventArgs e)
         {
+            /* if (pencilRadioButton.Checked)
+                 resultLabel.Text = "You have selected Pencil!";
+             else if (penRadioButton.Checked)
+                 resultLabel.Text = "You have selected Pen!";
+             else if (phoneRadioButton.Checked)
+                 resultLabel.Text = "You have selected Phone!";
+             else if (tabletRadioButton.Checked)
+                 resultLabel.Text = "You have selected Tablet!";
+             else
+                 resultLabel.Text = "Please select An Option!";
+
+             */
+
             if (pencilRadioButton.Checked)
+            {
                 resultLabel.Text = "You have selected Pencil!";
+                resultImage.ImageUrl = "Pencil.png";
+            }
             else if (penRadioButton.Checked)
-                resultLabel.Text = "You have selected Pen!";
+            {
+                resultLabel.Text = "You have selected Pen";
+                resultImage.ImageUrl = "Pen.png";
+            }
             else if (phoneRadioButton.Checked)
-                resultLabel.Text = "You have selected Phone!";
+            {
+                resultLabel.Text = "You have selected Phone";
+                resultImage.ImageUrl = "Phone.png";
+            }
             else if (tabletRadioButton.Checked)
-                resultLabel.Text = "You have selected Tablet!";
-            else
-                resultLabel.Text = "Please select An Option!";
+            {
+                resultLabel.Text = "You have selected Tablet";
+                resultImage.ImageUrl = "Tablet.png";
+            }
+
+            else resultLabel.Text = "Please Select An Opetion!";
         }
     }
 }

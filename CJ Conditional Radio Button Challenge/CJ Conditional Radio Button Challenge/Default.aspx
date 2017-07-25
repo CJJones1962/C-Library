@@ -5,42 +5,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            font-size: x-large;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
     
-        <span class="auto-style1"><strong>Your Note Taking Prefrences</strong></span><br />
-        <br />
-        <asp:RadioButton ID="pencilRadioButton" runat="server" Text="Pencil" />
+        Your Note Taking Prefrences
         <br />
         <br />
+        <asp:RadioButton ID="pencilRadioButton" runat="server" GroupName="CJNoteGroup" Text="Pencil" />
+&nbsp;<br />
         <br />
-    
-    </div>
-        <asp:RadioButton ID="penRadioButton" runat="server" Text="Pen" />
+        <asp:RadioButton ID="penRadioButton" runat="server" GroupName="CJNoteGroup" Text="Pen" />
+&nbsp;<br />
         <br />
+        <asp:RadioButton ID="phoneRadioButton" runat="server" GroupName="CJNoteGroup" Text="Phone" />
+&nbsp;<br />
         <br />
-        <br />
-        <asp:RadioButton ID="phoneRadioButton" runat="server" Text="Phone" />
-        <br />
-        <br />
-        <br />
-        <asp:RadioButton ID="tabletRadioButton" runat="server" Text="Tablet" />
-        <br />
+        <asp:RadioButton ID="tabletRadioButton" runat="server" GroupName="CJNoteGroup" Text="Tablet" />
+&nbsp;<br />
         <br />
         <asp:Button ID="okButton" runat="server" OnClick="okButton_Click" Text="Ok" />
-        <br />
+&nbsp;<br />
         <br />
         <asp:Label ID="resultLabel" runat="server"></asp:Label>
         <br />
         <br />
-        <br />
+        <asp:Image ID="resultImage" runat="server" ImageUrl="c:cjschoolstuff/c-library/cjconditionalbuttonchallenge/cjconditionalbuttonchallenge" />
+    
+    </div>
     </form>
 </body>
 </html>
