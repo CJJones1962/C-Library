@@ -20,13 +20,14 @@
         <asp:RadioButton ID="pencilRadioButton" runat="server" Text="Pencil" />
         <br />
         <br />
+        <br />
     
     </div>
         <asp:RadioButton ID="penRadioButton" runat="server" Text="Pen" />
         <br />
         <br />
         <br />
-        <asp:RadioButton ID="phoneRadioButton" runat="server" OnCheckedChanged="RadioButton3_CheckedChanged" Text="Phone" />
+        <asp:RadioButton ID="phoneRadioButton" runat="server" Text="Phone" />
         <br />
         <br />
         <br />
