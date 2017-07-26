@@ -50,7 +50,7 @@ namespace CJ_Conditional_Radio_Button_Challenge
                 resultImage.ImageUrl = "Tablet.png";
             }
 
-            else resultLabel.Text = "Please Select An Opetion!";
+            else resultLabel.Text = "Please Select An Option!";
         }
     }
 }
