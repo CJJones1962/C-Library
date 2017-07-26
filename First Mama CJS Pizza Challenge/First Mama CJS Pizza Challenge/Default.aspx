@@ -29,13 +29,13 @@
 &nbsp;<br />
         <asp:RadioButton ID="mamaRadioButton" runat="server" GroupName="Size" Text="Mama CJ Size (13&quot;) -$13" />
         <br />
-        <asp:RadioButton ID="papaRadioButton" runat="server" GroupName="Size" Text="Papa CJ Size (16&quot;)-$16" />
+        <asp:RadioButton ID="papaRadioButton" runat="server" GroupName="Size" Text="Papa CJ Size (16&quot;) -$16" />
         <br />
         <br />
         <br />
         <asp:RadioButton ID="tRadioButton" runat="server" GroupName="Crust" Text="Thin Crust" />
         <br />
-        <asp:RadioButton ID="dRadioButton" runat="server" GroupName="Crust" Text="Deep Crust (+$2)" />
+        <asp:RadioButton ID="dRadioButton" runat="server" GroupName="Crust" Text="Deep Dish (+$2)" />
         <br />
         <br />
         <asp:CheckBox ID="pepCheckBox" runat="server" Text="Pepperoni (+$1.50)" />
@@ -44,7 +44,7 @@
         <br />
         <asp:CheckBox ID="gpCheckBox" runat="server" Text="Green Peppers (+$0.50)" />
         <br />
-        <asp:CheckBox ID="rpCheckBox" runat="server" Text="Red Peppers (+$0.50)" />
+        <asp:CheckBox ID="rpCheckBox" runat="server" Text="Red Peppers (+$0.75)" />
         <br />
         <asp:CheckBox ID="aCheckBox" runat="server" Text="Anchovies (+$2.00)" />
         <br />
@@ -54,7 +54,7 @@
         <asp:Label ID="SpLabel" runat="server" ForeColor="#CC0000" style="font-size: x-large; font-weight: 700" Text="Special Deal"></asp:Label>
         <br />
         <br />
-        Save $2.00 when you add Pepperoni, Green Peppers and Anchovies OR Red Peppers and Onions to your pizza.<br />
+        Save $2.00 when you add Pepperoni, Green Peppers and Anchovies OR Pepperoni, Red Peppers and Onions to your pizza.<br />
         <br />
         <asp:Button ID="purchaseButton" runat="server" OnClick="purchaseButton_Click" Text="Purchase" />
 &nbsp;

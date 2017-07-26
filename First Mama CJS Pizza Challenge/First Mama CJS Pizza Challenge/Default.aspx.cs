@@ -21,27 +21,27 @@ namespace First_Mama_CJS_Pizza_Challenge
                 total = 10.00;
             else if (mamaRadioButton.Checked)
                 total = 13.00;
-            else if (papaRadioButton.Checked)
+            else  
                 total = 16.00;
             {
                 if (dRadioButton.Checked)
-                    total = (total + 2.00);
+                    total += 2.00;
             }
 
             total = (pepCheckBox.Checked) ? total + 1.5 : total;
             total = (oCheckBox.Checked) ? total + .75 : total;
             total = (gpCheckBox.Checked) ? total + .50 : total;
-            total = (rpCheckBox.Checked) ? total + .75 : total;
+            total = (rpCheckBox.Checked) ? total + .50 : total;
             total = (aCheckBox.Checked) ? total + 2.00 : total;
 
-            if (pepCheckBox.Checked
+            if ((pepCheckBox.Checked
                 && gpCheckBox.Checked
-                && aCheckBox.Checked
-                || pepCheckBox.Checked
+                && aCheckBox.Checked)
+                || (pepCheckBox.Checked
                 && rpCheckBox.Checked
-                && oCheckBox.Checked)
+                && oCheckBox.Checked))
             {
-                total = total - 2.00;
+                total -= 2.00;
             }
             resultLabel.Text = "$" + total.ToString();
 
