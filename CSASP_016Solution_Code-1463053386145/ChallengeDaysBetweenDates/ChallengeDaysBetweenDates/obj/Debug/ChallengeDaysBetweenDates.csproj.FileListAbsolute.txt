@@ -1,0 +1,6 @@
+c:\users\bob tabor\documents\visual studio 2013\Projects\ChallengeDaysBetweenDates\ChallengeDaysBetweenDates\bin\ChallengeDaysBetweenDates.dll.config
+c:\users\bob tabor\documents\visual studio 2013\Projects\ChallengeDaysBetweenDates\ChallengeDaysBetweenDates\bin\ChallengeDaysBetweenDates.dll
+c:\users\bob tabor\documents\visual studio 2013\Projects\ChallengeDaysBetweenDates\ChallengeDaysBetweenDates\bin\ChallengeDaysBetweenDates.pdb
+c:\users\bob tabor\documents\visual studio 2013\Projects\ChallengeDaysBetweenDates\ChallengeDaysBetweenDates\obj\Debug\ChallengeDaysBetweenDates.csprojResolveAssemblyReference.cache
+c:\users\bob tabor\documents\visual studio 2013\Projects\ChallengeDaysBetweenDates\ChallengeDaysBetweenDates\obj\Debug\ChallengeDaysBetweenDates.dll
+c:\users\bob tabor\documents\visual studio 2013\Projects\ChallengeDaysBetweenDates\ChallengeDaysBetweenDates\obj\Debug\ChallengeDaysBetweenDates.pdb
