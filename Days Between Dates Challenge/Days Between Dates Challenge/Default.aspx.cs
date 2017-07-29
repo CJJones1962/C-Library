@@ -32,10 +32,7 @@ namespace Days_Between_Dates_Challenge
                                 .TotalDays.ToString();
             }
             
-
-
-
-            
+                        
             //DateTime myCalender1 = DateTime.Parse("1");
             //TimeSpan myCalender2 = DateTime.Now.Subtract(myCalendar1);
         }
