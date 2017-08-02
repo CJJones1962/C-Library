@@ -42,15 +42,10 @@
         <asp:Button ID="addButton" runat="server" OnClick="addButton_Click" Text="Add Asset" />
 &nbsp;<br />
         <br />
-        <asp:Label ID="totalLabel" runat="server"></asp:Label>
+        <asp:Label ID="resultLabel" runat="server"></asp:Label>
 &nbsp;
         <br />
         <br />
-        <asp:Label ID="avgLabel" runat="server"></asp:Label>
-&nbsp;
-        <br />
-        <br />
-        <asp:Label ID="lastLabel" runat="server"></asp:Label>
 &nbsp;<br />
         <br />
     

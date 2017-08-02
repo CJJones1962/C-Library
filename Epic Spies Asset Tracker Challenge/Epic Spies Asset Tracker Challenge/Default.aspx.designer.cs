@@ -58,30 +58,12 @@ namespace Epic_Spies_Asset_Tracker_Challenge {
         protected global::System.Web.UI.WebControls.Button addButton;
         
         /// <summary>
-        /// totalLabel control.
+        /// resultLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label totalLabel;
-        
-        /// <summary>
-        /// avgLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label avgLabel;
-        
-        /// <summary>
-        /// lastLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lastLabel;
+        protected global::System.Web.UI.WebControls.Label resultLabel;
     }
 }
