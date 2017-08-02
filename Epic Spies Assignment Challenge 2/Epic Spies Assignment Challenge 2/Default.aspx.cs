@@ -11,11 +11,6 @@ namespace Epic_Spies_Assignment_Challenge_2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-
-        protected void assignButton_Click(object sender, EventArgs e)
-        {
             if (!Page.IsPostBack)
             {
                 logoImage.ImageUrl = "epic-spies-logo.jpg";
@@ -23,11 +18,21 @@ namespace Epic_Spies_Assignment_Challenge_2
                 Calendar2.SelectedDate = DateTime.Now.Date.AddDays(14);
                 Calendar3.SelectedDate = DateTime.Now.Date.AddDays(21);
             }
+            
+                    
 
         }
 
-        protected void assignButton1_Click(object sender, EventArgs e)
+        protected void assignButton_Click(object sender, EventArgs e)
+
+        
+            
+        
+
         {
+            //Start of new assignment 14 days after end of previous assignment
+           // TimeSpan startOfnewAssignment = Calendar2.SelectedDate.AddDays(14);
+
             //Spies cost $500 per day.
             TimeSpan totaldurationOfAssignment = Calendar3.SelectedDate.Subtract(Calendar2.SelectedDate);
             double totalCost = totaldurationOfAssignment.TotalDays * 500.0;
@@ -47,20 +52,20 @@ namespace Epic_Spies_Assignment_Challenge_2
 
 
             //if next assignment is < 14 days then 
-            DateTime earliestNewAssighmentDate = Calendar2.SelectedDate.AddDays(14);
-
-            Calendar2.SelectedDate = earliestNewAssighmentDate;
-            Calendar2.VisibleDate = earliestNewAssighmentDate;
-
+           
             TimeSpan timeBetweenAssignments = Calendar1.SelectedDate.Subtract(Calendar2.SelectedDate);
             if (timeBetweenAssignments.TotalDays < 14)
             {
                 resultLabel.Text = "Error: Must allow at least two weeks between previous" +
                     "assignment and new assignment.";
+
+                DateTime earliestNewAssighmentDate = Calendar2.SelectedDate.AddDays(14);
+
+                Calendar2.SelectedDate = earliestNewAssighmentDate;
+                Calendar2.VisibleDate = earliestNewAssighmentDate;
+
             }
-
-
-            
+                     
 
             resultLabel.Text = result;
         }

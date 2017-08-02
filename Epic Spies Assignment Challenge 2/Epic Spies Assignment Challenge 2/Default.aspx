@@ -69,7 +69,7 @@
         </asp:Calendar>
         <br />
         <br />
-        <asp:Button ID="assignButton1" runat="server" OnClick="assignButton_Click" Text="Assign Spy" />
+        <asp:Button ID="assignButton" runat="server" OnClick="assignButton_Click" Text="Assign Spy" />
 &nbsp;<br />
         <br />
         <asp:Label ID="resultLabel" runat="server"></asp:Label>
