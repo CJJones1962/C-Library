@@ -17,11 +17,11 @@
     
         <strong><span class="auto-style1">Mega Slot Machine</span></strong><br />
         <br />
-        <asp:Image ID="randomImage1" runat="server" Height="150px" OnDataBinding="leverButton_Click" Width="150px" />
+        <asp:Image ID="randomImage1" runat="server" Height="150px" Width="150px" />
 &nbsp;
-        <asp:Image ID="randomImage2" runat="server" Height="150px" OnDataBinding="leverButton_Click" Width="150px" />
+        <asp:Image ID="randomImage2" runat="server" Height="150px" Width="150px" />
 &nbsp;
-        <asp:Image ID="randomImage3" runat="server" Height="150px" OnDataBinding="leverButton_Click" Width="150px" />
+        <asp:Image ID="randomImage3" runat="server" Height="150px" Width="150px" />
         <br />
         <br />
         Your Bet: <asp:TextBox ID="betTextBox" runat="server"></asp:TextBox>

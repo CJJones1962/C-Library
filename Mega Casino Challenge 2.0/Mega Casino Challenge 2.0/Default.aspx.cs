@@ -11,9 +11,10 @@ namespace Mega_Casino_Challenge_2._0
     {
 
         Random random = new Random();
-        private int multiplier;
 
-        public int CherryCount { get; private set; }
+        public int multiplier;
+
+        public int cherryCount { get; private set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -33,9 +34,9 @@ namespace Mega_Casino_Challenge_2._0
         private void displayResult(int bet, int winnings)
         {
             if (winnings > 0)
-                youbetLabel.Text = String.Format("You bet {0:C} and won {1:C} !", bet, winnings);
+                youbetLabel.Text = string.Format("You bet {0:C} and won {1:C} !", bet, winnings);
             else
-                youbetLabel.Text = String.Format("Sorry, you lost your {0:C}. Better luck next time.", bet);
+                youbetLabel.Text = string.Format("Sorry, you lost your {0:C}. Better luck next time.", bet);
             
         }
 
@@ -67,20 +68,20 @@ namespace Mega_Casino_Challenge_2._0
 
         private int determineMultiplier(string[] reels)
         {
-            int cherryCount = determineCherryCount(reels);
+            int cherryCount = determinecherryCount(reels);
             if (cherryCount == 1) return 2;
             if (cherryCount == 2) return 3;
             if (cherryCount == 3) return 4;
             return 0;
         }
         
-        private int determineCherryCount(string[] reels)
+        private int determinecherryCount(string[] reels)
         {
             int cherryCount = 0;
             if (reels[0] == "Cherry") cherryCount++;
             if (reels[1] == "Cherry") cherryCount++;
             if (reels[2] == "Cherry") cherryCount++;
-            return CherryCount;
+            return cherryCount;
         }
 
         private bool isJackpot(string[] reels)
