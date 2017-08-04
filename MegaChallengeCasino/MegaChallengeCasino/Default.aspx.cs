@@ -39,8 +39,7 @@ namespace MegaChallengeCasino
         }
         private string spinReel()
         {
-            string[] images = new string[] {"Strawberry","Bar","Lemon","Bell","Clover","Cherry" +
-                    "Diamond","Orange","Seven","HorseShoe","Plum","Watermelon"};
+            string[] images = new string[] {"Strawberry","Bar","Lemon","Bell","Clover","Cherry", "Diamond","Orange","Seven","HorseShoe","Plum","Watermelon"};
             return images[random.Next(11)];
 
         }
