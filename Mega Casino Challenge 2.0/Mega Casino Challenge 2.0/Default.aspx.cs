@@ -28,15 +28,15 @@ namespace Mega_Casino_Challenge_2._0
 
             int winnings = pullLever(bet);
 
-            displayResult(bet, winnings);
+            displayyoubet(bet, winnings);
         }
 
-        private void displayResult(int bet, int winnings)
+        private void displayyoubet(int bet, int winnings)
         {
             if (winnings > 0)
-                youbetLabel.Text = string.Format("You bet {0:C} and won {1:C} !", bet, winnings);
+                youbetLabel.Text = String.Format("You bet {0:C} and won {1:C} !", bet, winnings);
             else
-                youbetLabel.Text = string.Format("Sorry, you lost your {0:C}. Better luck next time.", bet);
+                youbetLabel.Text = String.Format("Sorry, you lost your {0:C}. Better luck next time.", bet);
             
         }
 
