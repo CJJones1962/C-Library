@@ -18,7 +18,13 @@ namespace Mega_Casino_Challenge_2._0
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                string[] reels = new string[] { spinReel(), spinReel(), spinReel() };
+                displayImages(reels);
+                ViewState.Add("PlayerMoney", 100);
+                displayPlayerMoney();
+            }
         }
 
         protected void leverButton_Click(object sender, EventArgs e)
@@ -27,23 +33,17 @@ namespace Mega_Casino_Challenge_2._0
             if (!int.TryParse(betTextBox.Text, out bet)) return;
 
             int winnings = pullLever(bet);
-
             displayyoubet(bet, winnings);
+            adjustPlayerMoney(bet, winnings);
+            displayPlayerMoney();
         }
 
-        private void displayyoubet(int bet, int winnings)
+        private void adjustPlayerMoney(int bet, int winnings)
         {
-            if (winnings > 0)
-            {
-                youbetLabel.Text = String.Format("You bet {0:C} and won {1:C} !", bet, winnings);
-            }
-                
-            else
-            {
-                youbetLabel.Text = String.Format("Sorry, you lost your {0:C}. Better luck next time.", bet);
-            }
-                
-            
+            int PlayerMoney = int.Parse(ViewState["PlayerMoney"].ToString());
+            PlayerMoney -= bet;
+            PlayerMoney += winnings;
+            ViewState["PlayersMoney"] = PlayerMoney;
         }
 
         private int pullLever(int bet)
@@ -53,7 +53,13 @@ namespace Mega_Casino_Challenge_2._0
 
             int multipiler = EvalulateSpin(reels);
             return bet * multiplier;
+        }
 
+        private void displayImages(string[] reels)
+        {
+            randomImage1.ImageUrl = "/Images/" + reels[0] + ".png";
+            randomImage2.ImageUrl = "/Images/" + reels[1] + ".png";
+            randomImage3.ImageUrl = "/Images/" + reels[2] + ".png";
         }
 
         private int EvalulateSpin(string[] reels)
@@ -90,6 +96,12 @@ namespace Mega_Casino_Challenge_2._0
             return cherryCount;
         }
 
+        private string spinReel()
+        {
+            string[] images = new string[] { "Strawberry", "Bar", "Lemon", "Bell", "Clover", "Cherry", "Diamond", "Orange", "Seven", "HorseShoe", "Plum", "Watermelon" };
+            return images[random.Next(11)];
+        }
+
         private bool isJackpot(string[] reels)
         {
             if (reels[0] == "Seven" && reels[1] == "Seven" && reels[2] == "Seven")
@@ -105,20 +117,19 @@ namespace Mega_Casino_Challenge_2._0
             else
                 return false;
         }
-        
-        private void displayImages(string[] reels)
+
+        private void displayyoubet(int bet, int winnings)
         {
-            randomImage1.ImageUrl = "/Images/" + reels[0] + ".png";
-            randomImage2.ImageUrl = "/Images/" + reels[1] + ".png";
-            randomImage3.ImageUrl = "/Images/" + reels[2] + ".png";
+            if (bet > 0)
+                youbetLabel.Text = String.Format("You bet {0:C} and won {1:C} !", bet, winnings);
+            else
+                youbetLabel.Text = String.Format("Sorry, you lost your {0:C}. Better luck next time.", bet);
         }
 
-        private string spinReel()
+        private void displayPlayerMoney()
         {
-            string[] images = new string[] { "Strawberry", "Bar", "Lemon", "Bell", "Clover", "Cherry", "Diamond", "Orange", "Seven", "HorseShoe", "Plum", "Watermelon" };
-            return images[random.Next(11)];
+            playermoneyLabel.Text = String.Format("Player's Money: {0:C}", ViewState["PlayersMoney"]);
         }
-
     }
 }
 
