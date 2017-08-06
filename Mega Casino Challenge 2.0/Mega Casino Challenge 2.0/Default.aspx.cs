@@ -11,10 +11,8 @@ namespace Mega_Casino_Challenge_2._0
     {
 
         Random random = new Random();
-
-        public int multiplier;
-
-        public int cherryCount { get; private set; }
+       
+        //public int cherryCount { get; private set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -43,7 +41,7 @@ namespace Mega_Casino_Challenge_2._0
             int PlayerMoney = int.Parse(ViewState["PlayerMoney"].ToString());
             PlayerMoney -= bet;
             PlayerMoney += winnings;
-            ViewState["PlayersMoney"] = PlayerMoney;
+            ViewState["PlayerMoney"] = PlayerMoney;
         }
 
         private int pullLever(int bet)
@@ -51,7 +49,7 @@ namespace Mega_Casino_Challenge_2._0
             string[] reels = new string[] { spinReel(), spinReel(), spinReel() };
             displayImages(reels);
 
-            int multipiler = EvalulateSpin(reels);
+            int multiplier = EvalulateSpin(reels);
             return bet * multiplier;
         }
 
@@ -128,7 +126,7 @@ namespace Mega_Casino_Challenge_2._0
 
         private void displayPlayerMoney()
         {
-            playermoneyLabel.Text = String.Format("Player's Money: {0:C}", ViewState["PlayersMoney"]);
+            playermoneyLabel.Text = String.Format("Player's Money: {0:C}", ViewState["PlayerMoney"]);
         }
     }
 }
