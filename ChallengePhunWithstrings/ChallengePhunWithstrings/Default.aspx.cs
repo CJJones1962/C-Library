@@ -81,10 +81,12 @@ namespace ChallengePhunWithstrings
             puzzle = puzzle.Remove(index, removeMe.Length);
             puzzle = puzzle.ToLower();
             puzzle = puzzle.Replace('z', 't');
-            puzzle - puzzle.Remove(0, 1);
+            puzzle = puzzle.Remove(0, 1);
             puzzle = puzzle.Insert(0, "N");
 
+
             resultLabel.Text = puzzle;
+
 
 
         }
