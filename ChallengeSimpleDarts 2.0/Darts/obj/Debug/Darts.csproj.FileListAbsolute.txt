@@ -1,0 +1,5 @@
+C:\CJ School Stuff\C-Library\ChallengeSimpleDarts 2.0\Darts\bin\Debug\Darts.dll
+C:\CJ School Stuff\C-Library\ChallengeSimpleDarts 2.0\Darts\bin\Debug\Darts.pdb
+C:\CJ School Stuff\C-Library\ChallengeSimpleDarts 2.0\Darts\obj\Debug\Darts.csprojResolveAssemblyReference.cache
+C:\CJ School Stuff\C-Library\ChallengeSimpleDarts 2.0\Darts\obj\Debug\Darts.dll
+C:\CJ School Stuff\C-Library\ChallengeSimpleDarts 2.0\Darts\obj\Debug\Darts.pdb
