@@ -17,7 +17,6 @@ namespace MegaChallengeWar_1._0
         public Player()
         {
             Cards = new List<Card>();
-
         }
     }
 }
