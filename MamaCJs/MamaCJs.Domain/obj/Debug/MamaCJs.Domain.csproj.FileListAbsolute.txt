@@ -1,0 +1,11 @@
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\bin\Debug\MamaCJs.Domain.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\bin\Debug\MamaCJs.Domain.pdb
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\obj\Debug\MamaCJs.Domain.csprojResolveAssemblyReference.cache
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\obj\Debug\MamaCJs.Domain.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\obj\Debug\MamaCJs.Domain.pdb
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\bin\Debug\MamaCJs.DTO.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\bin\Debug\MamaCJs.Persistance.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\bin\Debug\MamaCJs.DTO.pdb
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\bin\Debug\MamaCJs.Persistance.pdb
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\bin\Debug\EntityFramework.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Domain\bin\Debug\EntityFramework.xml

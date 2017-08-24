@@ -1,0 +1,5 @@
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.DTO\bin\Debug\MamaCJs.DTO.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.DTO\bin\Debug\MamaCJs.DTO.pdb
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.DTO\obj\Debug\MamaCJs.DTO.csprojResolveAssemblyReference.cache
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.DTO\obj\Debug\MamaCJs.DTO.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.DTO\obj\Debug\MamaCJs.DTO.pdb

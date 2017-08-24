@@ -1,0 +1,12 @@
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\bin\Debug\MamaCJs.Persistance.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\bin\Debug\MamaCJs.Persistance.pdb
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\obj\Debug\MamaCJs.Persistance.csprojResolveAssemblyReference.cache
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\obj\Debug\MamaCJs.Persistance.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\obj\Debug\MamaCJs.Persistance.pdb
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\bin\Debug\MamaCJs.DTO.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\bin\Debug\MamaCJs.DTO.pdb
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\bin\Debug\MamaCJs.Persistance.dll.config
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\bin\Debug\EntityFramework.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\bin\Debug\EntityFramework.SqlServer.dll
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\bin\Debug\EntityFramework.xml
+C:\CJ School Stuff\C-Library\MamaCJs\MamaCJs.Persistance\bin\Debug\EntityFramework.SqlServer.xml
