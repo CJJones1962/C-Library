@@ -70,6 +70,10 @@
     <Compile Include="Order.cs">
       <DependentUpon>MamaCJsEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="PizzaPrice.cs">
+      <DependentUpon>MamaCJsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PizzaPriceRespository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

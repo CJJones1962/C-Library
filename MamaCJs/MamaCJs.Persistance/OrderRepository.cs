@@ -15,7 +15,6 @@ namespace MamaCJs.Persistance
             var order = convertToEntity(orderDTO);
             db.Orders.Add(order);
             db.SaveChanges();
-
         }
         private static Order convertToEntity(DTO.OrderDTO orderDTO)
         {

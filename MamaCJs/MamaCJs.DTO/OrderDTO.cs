@@ -22,5 +22,6 @@ namespace MamaCJs.DTO
         public string Phone { get; set; }
         public MamaCJs.DTO.Enums.PaymentType PaymentType { get; set; }
         public bool Completed { get; set; }
+        public decimal TotalCost { get; set; }
     }
 }

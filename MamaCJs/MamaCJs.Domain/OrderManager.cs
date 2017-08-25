@@ -24,6 +24,10 @@ namespace MamaCJs.Domain
             order.TotalCoast = 16.50M;
             */
 
+            orderDTO.OrderId = Guid.NewGuid();
+            orderDTO.TotalCost = PizzaPriceManager.CalculateCost(orderDTO);
+
+
             Persistance.OrderRepository.CreateOrder(orderDTO);
         }
     }

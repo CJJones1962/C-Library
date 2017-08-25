@@ -16,13 +16,22 @@
     </div>
         <div class =" form-group">
             <label>Size: </label>
-
-        <asp:DropDownList ID="sizeDropDownList" runat="server" CssClass =" form-control" AutoPostBack ="true"></asp:DropDownList>
+        <asp:DropDownList ID="sizeDropDownList" runat="server" CssClass =" form-control" AutoPostBack ="true">
+            <asp:ListItem Text="Choose One ..." Selected ="True" />
+            <asp:ListItem Text="Small (12 inch - $12)" Value="Small" />
+            <asp:ListItem Text="Medium (14 inch - $14)" Value="Medium" />
+            <asp:ListItem Text="Large (16 inch - $16)" Value="Large" />
+        </asp:DropDownList>
       </div>
 
       <div class =" form-group">
             <label>Crust: </label>
-        <asp:DropDownList ID="crustDropDownList" runat="server" CssClass =" form-control" AutoPostBack ="true"></asp:DropDownList>
+        <asp:DropDownList ID="crustDropDownList" runat="server" CssClass =" form-control" AutoPostBack ="true">
+             <asp:ListItem Text="Choose One ..." Selected ="True" />
+             <asp:ListItem Text="Regular Crust" Value="Regular" />
+             <asp:ListItem Text="Thin Crust" Value="Thin" />
+             <asp:ListItem Text="Thick Crust (+$2)" Value="Thick" />
+        </asp:DropDownList>
       </div>
 
         <div class ="checkbox"><label><asp:CheckBox ID="sausageCheckBox" runat="server" AutoPostBack ="true"/> Sausage</label></div>
@@ -63,7 +72,7 @@
         <div class ="radio"><label><asp:RadioButton ID="cashRadioButton" runat="server" GroupName=" PaymentGroup"/> Cash:</label></div>
         <div class ="radio"><label><asp:RadioButton ID="creditRadioButton" runat="server" GroupName ="PaymentGroup"/> Credit: </label></div>
 
-        <asp:Button ID="orderButton" runat="server" Text="Order" CssClass =" btn btn-lg btn-primary"/>
+        <asp:Button ID="orderButton" runat="server" Text="Order" CssClass =" btn btn-lg btn-primary" OnClick="orderButton_Click"/>
 
         <h3>Total Cost: <asp:Label ID="totalLabel" runat="server" Text=""></asp:Label></h3>
 
