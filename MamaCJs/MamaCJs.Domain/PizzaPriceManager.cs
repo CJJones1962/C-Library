@@ -43,10 +43,10 @@ namespace MamaCJs.Domain
                     cost = prices.RegularCrustCost;
                     break;
                 case DTO.Enums.CrustType.Thin:
-                    cost = prices.ThickCrustCost;
+                    cost = prices.ThinCrustCost;
                     break;
                 case DTO.Enums.CrustType.Thick:
-                    cost = prices.ThinCrustCost;
+                    cost = prices.ThickCrustCost;
                     break;
                 default:
                     break;

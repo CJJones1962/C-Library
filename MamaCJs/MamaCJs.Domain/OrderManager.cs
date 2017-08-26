@@ -10,25 +10,34 @@ namespace MamaCJs.Domain
     {
         public static void CreateOrder(DTO.OrderDTO orderDTO)
         {
-            /*
-            var order = new DTO.OrderDTO();
-            order.OrderId = Guid.NewGuid();
-            order.Size = DTO.Enums.SizeType.Large;
-            order.Crust = DTO.Enums.CrustType.Thick;
-            order.Pepperoni = true;
-            order.Name = "Test";
-            order.Address = "123 Elm";
-            order.Zip = "12345";
-            order.Phone = "555-5555";
-            order.PaymentType = DTO.Enums.PaymentType.Credit;
-            order.TotalCoast = 16.50M;
-            */
+            //Validation
+            if (orderDTO.Name.Trim().Length == 0)
+                throw new Exception("Name is requierd.");
+
+            if (orderDTO.Address.Trim().Length == 0)
+                throw new Exception("Address is requierd.");
+
+            if (orderDTO.Zip.Trim().Length == 0)
+                throw new Exception("Zip is requierd.");
+
+            if (orderDTO.Phone.Trim().Length == 0)
+                throw new Exception("Phone is requierd.");
 
             orderDTO.OrderId = Guid.NewGuid();
             orderDTO.TotalCost = PizzaPriceManager.CalculateCost(orderDTO);
-
-
             Persistance.OrderRepository.CreateOrder(orderDTO);
         }
+
+        public static object GetOrders()
+        {
+            return Persistance.OrderRepository.GetOrders();
+
+        }
+
+        public static void CompleteOrder(Guid orderId)
+        {
+            Persistance.OrderRepository.CompleteOrder(orderId);
+        }
+
     }
 }
