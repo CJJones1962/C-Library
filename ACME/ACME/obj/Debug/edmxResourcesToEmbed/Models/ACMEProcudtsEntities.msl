@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ACMEProductsModelStoreContainer" CdmEntityContainer="ACMEProductsEntities">
+    <EntitySetMapping Name="PROCUCTS">
+      <EntityTypeMapping TypeName="ACMEProductsModel.PROCUCT">
+        <MappingFragment StoreEntitySet="PROCUCTS">
+          <ScalarProperty Name="ProcuctId" ColumnName="ProcuctId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

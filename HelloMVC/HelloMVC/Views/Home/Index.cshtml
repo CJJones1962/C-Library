@@ -1,0 +1,47 @@
+﻿@model List<HelloMVC.Models.Car>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>@ViewBag.CJCreateThisValue</h1>
+<h2>CJ Changed This</h2>
+<p>Hello again!</p>
+
+
+@{ 
+    var name = "CJ";
+    var day = DateTime.Now.DayOfWeek.ToString();
+    <p>Hi!,  @name. Today is @day.</p>
+}
+
+
+@foreach (var car in Model)
+{
+    <p>@car.Id - @car.Make - @car.Model</p>
+
+}
+
+@helper pluralizeChildren(int childCount) { 
+    @(childCount == 1 ? "Child" : "Children");
+}
+
+@{
+    var childCount = 1;
+    <p>I have @childCount @pluralizeChildren(@childCount).</p>
+
+}
+
+@*
+
+@helper pluralize(int amount, string singular, string plural)
+{
+    @(amount == 1 ? singular : plural)
+}
+
+@{ 
+    var crisesCount = 2;
+    <p>Mr. President, there @pluralize(crisesCount, "Is one crises", + crisesCount + " crises") you must deal with immedietly.</p>
+}
+
+*@
+
