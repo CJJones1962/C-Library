@@ -3,7 +3,7 @@
     ViewBag.Title = "CJ's Comics";
 }
 
-<h2>CJ's Coics</h2>
+<h2>CJ's Comics</h2>
 @foreach (var comic in Model)
 {
     <h3>@Html.ActionLink(comic.ComicTitle, "Detail", new { id=comic.ComicBookId  })</h3>
