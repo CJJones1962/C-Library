@@ -44,7 +44,3 @@ C:\CJ School Stuff\C-Library\CJ'sComics\CJ'sComics\bin\System.Web.Mvc.xml
 C:\CJ School Stuff\C-Library\CJ'sComics\CJ'sComics\obj\Debug\CJ'sComics.csprojResolveAssemblyReference.cache
 C:\CJ School Stuff\C-Library\CJ'sComics\CJ'sComics\obj\Debug\CJ'sComics.dll
 C:\CJ School Stuff\C-Library\CJ'sComics\CJ'sComics\obj\Debug\CJ'sComics.pdb
-C:\CJ School Stuff\C-Library\CJ'sComics\CJ'sComics\bin\EntityFramework.dll
-C:\CJ School Stuff\C-Library\CJ'sComics\CJ'sComics\bin\EntityFramework.SqlServer.dll
-C:\CJ School Stuff\C-Library\CJ'sComics\CJ'sComics\bin\EntityFramework.xml
-C:\CJ School Stuff\C-Library\CJ'sComics\CJ'sComics\bin\EntityFramework.SqlServer.xml
